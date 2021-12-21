@@ -9,20 +9,12 @@ func set_offset(vector: Vector2):
 		return
 	offset = vector
 	set_transform(offset, scale)
-	#add_constant_override("margin_left", vector.x)
-	#add_constant_override("margin_right", -vector.x)
-	#add_constant_override("margin_bottom", vector.y)
-	#add_constant_override("margin_top", -vector.y)
 
 func set_scale(vector: Vector2):
 	if scale == vector:
 		return
 	scale = vector
 	set_transform(offset, scale)
-	#print(scale)
-	#var size = rect_size / 2
-	#add_constant_override("margin_left", (1-vector.x) * size.x)
-	#add_constant_override("margin_right", (1-vector.x) * size.x)
 
 func set_transform(offset_vector: Vector2, scale_vector: Vector2):
 	var size = rect_size / 2
