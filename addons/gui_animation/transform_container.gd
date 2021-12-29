@@ -26,7 +26,7 @@ func set_scale(vector: Vector2):
 func set_transform():
 	var vector = (Vector2(1,1) - scale)
 	add_constant_override("margin_left",
-		vector.x * rect_size.x * pivot.x + offset.x)
+			vector.x * rect_size.x * pivot.x + offset.x)
 	add_constant_override("margin_right",
 			 vector.x * rect_size.x * (1 - pivot.x) - offset.x)
 	add_constant_override("margin_bottom", 
