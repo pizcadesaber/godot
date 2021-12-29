@@ -1,11 +1,9 @@
 tool
 extends MarginContainer
 
-
 export(Vector2) var offset = Vector2(0,0) setget set_offset
 export(Vector2) var scale = Vector2(1,1) setget set_scale
 export(Vector2) var pivot = Vector2(0.5, 0.5) setget set_pivot
-
 
 func set_offset(vector: Vector2):
 	if offset == vector:
